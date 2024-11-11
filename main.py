@@ -8,6 +8,7 @@ class Asiento:
         if color in ["rojo", "verde", "amarillo", "negro", "blanco"]:
             self.color = color
 
+
 class Motor:
     def __init__(self, numero_cilindros, tipo, registro):
         self.numero_cilindros = numero_cilindros
@@ -21,9 +22,10 @@ class Motor:
         if tipo in ["gasolina", "electrico"]:
             self.tipo = tipo
 
+
 class Auto:
     cantidadCreados = 0
-    
+
     def __init__(self, modelo, precio, asientos, marca, motor, registro):
         self.modelo = modelo
         self.precio = precio
